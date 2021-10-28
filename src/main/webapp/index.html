@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cloud Deploy java Heroku </title>
+        <title>Bmi Calculator - Heroku </title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="/css/styles.css">  
     </head>
     <body>
-        <h1>Hello Developer</h1>
-        <h3>Maven Deployment</h3>
-        <p class="p1">All Developers are Smart, dashing, intelligent and hard-working</p>
-        <p>Every Developer think different to solve a problem in the form of code.</p>
-        <p>There are Hundred's of Programming Languages, But The most popular programming Languages are PYTHON, JAVA, C-SHARP, C++ && C</p>
+        <!--        <h1>Hello Developer</h1>
+                <h3>Maven Deployment</h3>
+                <p class="p1">All Developers are Smart, dashing, intelligent and hard-working</p>
+                <p>Every Developer think different to solve a problem in the form of code.</p>
+                <p>There are Hundred's of Programming Languages, But The most popular programming Languages are PYTHON, JAVA, C-SHARP, C++ && C</p>-->
+        <h3>Bmi Calculator</h3>
+        <p>Its a Simple Bmi Calculator</p>
+        <div class="container">
+            <form>
+                <div class="heightdiv" style="margin-top: 20px;">
+                    <label for="hfield">Height</label>
+                    <input id="height_field" name="heightfield" placeholder="Your Height in meters">
+                </div>
+
+                <div class="weightdiv" style="margin-top: 20px;">
+                    <label for="wfield">Weight</label>
+                    <input id="weight_field" name="weightfield" placeholder="Your Weight in kg">
+                </div>
+                <br>
+                <input type="button" value="Calculate" onclick="Calc_bmi()">
+                <br>
+                <br>
+                <h2 id="bmi_index" class="bmitotal"> </h2>
+                <h2 id="bmi_status" class="bmistatus"> </h2>
+            </form>
+        </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
